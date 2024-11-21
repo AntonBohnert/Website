@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Desk Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="desk-photo.jpg" alt="Desk Photo" usemap="#deskmap">
+        <map name="deskmap">
+            <area shape="rect" coords="50,50,200,200" href="#analog-gallery" alt="Dia Filme">
+            <area shape="rect" coords="250,50,400,200" href="#digital-gallery" alt="Festplatte">
+            <area shape="rect" coords="50,300,200,400" href="#notebook" alt="Notizbuch">
+        </map>
+    </div>
+
+    <div id="analog-gallery" class="modal">
+        <h2>Analog Gallery</h2>
+        <p>Hier kommen deine analogen Fotos.</p>
+        <button onclick="closeModal()">Close</button>
+    </div>
+
+    <div id="digital-gallery" class="modal">
+        <h2>Digital Gallery</h2>
+        <p>Hier kommen deine digitalen Fotos.</p>
+        <button onclick="closeModal()">Close</button>
+    </div>
+
+    <div id="notebook" class="modal">
+        <h2>Notizbuch</h2>
+        <p>Kontakt und Impressum erscheinen hier mit einer Animation!</p>
+        <button onclick="closeModal()">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
